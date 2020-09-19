@@ -301,6 +301,12 @@ body{
   width: 100%;
 }
 
+.about p{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+
 .about .container {
     /* margin-left: 10%; */
     margin-right: 10%;
