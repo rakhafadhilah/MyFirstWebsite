@@ -348,6 +348,7 @@ body{
 
 /* Education Section */
 
+
 .edu{
   margin-left: 15%;
   margin-right: 15%;
@@ -357,6 +358,11 @@ body{
 .edu  img{
   width: 50%;
   height: 231;
+}
+
+.edu p, .edu h2{
+  font-size: 1.5rem;
+  color: #003366;
 }
 
 td{
@@ -381,13 +387,14 @@ td{
 }
 
 .educat td{
+  margin: 10px;
   text-align: center;
   padding: 5px 40px;
   border-radius: 6px;
 }
 
 .educat td:hover{
-  background: #16162d;
+  background: grey;
   padding: 10px 40px;
   border-radius: 10px;
   bac
@@ -564,6 +571,7 @@ input[type="submit"]:hover {
   left: 50px;
   margin-left: -50%;
 }
+
 
 .organex .timeline img.logo {
     display: flex;
