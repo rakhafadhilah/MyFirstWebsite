@@ -318,6 +318,10 @@ body{
     font-size: 4rem;
 } */
 
+.about .prof-details{
+  padding: 50px;
+}
+
 .about img{
   /* height: 231px;
   width: 351px; */
@@ -325,11 +329,18 @@ body{
   min-height: 150px;
   max-width: 351px;
   max-height: 231px; */
-  width: 100%;
-  height: 231%;
-  /* background-size: contain; */
-  border: 1px solid red;
+  /* width: 100%;
+  height: 231;*/
+  border: 2px solid red;
 }
+
+.about .profpic{
+  /* max-width: 70%;; */
+  min-width: 30%;
+  /* min-height: */
+}
+
+
 
 /* End of About Section */
 
@@ -375,6 +386,14 @@ td{
   border-radius: 6px;
 }
 
+.educat td:hover{
+  background: #16162d;
+  padding: 10px 40px;
+  border-radius: 10px;
+  bac
+}
+
+
 .odd{
   background-color: rgb(160, 193, 182);
 }
@@ -387,50 +406,7 @@ td{
 /* End of Education Section */
 
 /* Contact */
-.contact {
-    background-color: #151019;
-}
-.contact .section-heading {
-    font-size: 4rem;
-}
 
-.contact .container {
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 10%; */
-  justify-content: center;
-  align-items: center;
-}
-form {
-    width: 70%;
-    margin: 0 auto;
-}
-form label {
-    font-size: 1.5rem;
-}
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    ;
-    outline-color: #151019;
-}
-input[type="submit"] {
-    width: initial;
-    background-color: #221e3f;
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    transition: background-color 650ms;
-}
-input[type="submit"]:hover {
-    color: #221e3f;
-    background-color: #151019;
-}
 .cont .heading {
     margin-bottom: 0;
 }
@@ -459,6 +435,52 @@ input[type="submit"]:hover {
 }
 .cont-ul i {
     font-size: 3.3rem;
+}
+
+
+.contact {
+    background-color: #151019;
+}
+.contact .section-heading {
+    font-size: 4rem;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 10%; */
+  justify-content: center;
+  align-items: center;
+}
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+form label {
+    font-size: 1.5rem;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #151019;
+    color: black;
+}
+input[type="submit"] {
+    width: initial;
+    background-color: #221e3f;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover {
+    color: #221e3f;
+    background-color: #151019;
 }
 /* End of Contact */
 
@@ -504,6 +526,8 @@ input[type="submit"]:hover {
     text-align: right;
     min-width: 12rem;
     font: 1.5rem;
+    animation-name: orgLeft;
+    animation-duration: 1s;
 }
 .timeline .date::after {
     content: '';
@@ -524,6 +548,8 @@ input[type="submit"]:hover {
     list-style: none;
     text-align: left;
     width: 70%;
+    animation-name: orgRight;
+    animation-duration: 1s;
 }
 .organex .container {
   display: flex;
@@ -548,6 +574,8 @@ input[type="submit"]:hover {
     margin-bottom: 30px; */
     width: 70%;
     height: 231%;
+    /* animation-name: orgRight;
+    animation-duration: 1s; */
 }
 
 /* End of Experience */
@@ -648,5 +676,22 @@ input[type="submit"]:hover {
   }
   .header .nav-list ul a::after{
     display: none;
+  }
+}
+
+@keyframes orgLeft {
+  0%{
+    left: -50rem;
+  }
+  100%{
+    left: -28rem;
+  }
+}
+@keyframes orgRight {
+  0%{
+    left: 400px;
+  }
+  100%{
+    left: 70px;
   }
 }
